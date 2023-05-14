@@ -1,0 +1,74 @@
+{
+    "books": [
+        {
+            "id":1,
+            "name": "Re:zero volume 1",
+            "description": "um isekai top",
+            "picture": "/images/rezeroVolume1.jpg",
+            "price": 50.00
+        },
+        {
+            "id":2,
+            "name": "O cavaleiro preso na armadura",
+            "description": "uma fabula que conta a historia de autoconhecimento",
+            "picture": "/images/cavaleiro.jpg",
+            "price": 20.00
+        },
+        {
+            "id":3,
+            "name": "Harry Potter e as reliquias da morte",
+            "description": "",
+            "picture": "/images/harryPotterCapa.jpg",
+            "price": 150.00
+        },
+        {
+            "id":4,
+            "name": "Re:zero volume 2",
+            "description": "um isekai top",
+            "picture": "/images/rezeroVolume2.jpg",
+            "price": 50.00
+        },
+        {
+            "id":5,
+            "name": "Percy Jackson e o ladrão de raios",
+            "description": "",
+            "picture": "/images/ladraoDeRaios.jpg",
+            "price": 32.00
+        }, 
+        {
+            "id":6,
+            "name": "O poder do hábito",
+            "description": "",
+            "picture": "/images/habito.jpg",
+            "price":72.00
+        }
+    ],
+    "users":[
+        {
+            "id": 1,
+            "name": "Gustavo Bordignon",
+            "email": "gustavo.bordignon@outlook.com",
+            "password": "123",
+            "cartItens": [ {
+                "id":2,
+                "name": "O cavaleiro preso na armadura",
+                "description": "uma fabula que conta a historia de autoconhecimento",
+                "picture": "/images/cavaleiro.jpg",
+                "price": 20.00
+            },{
+                "id":4,
+                "name": "Re:zero volume 2",
+                "description": "um isekai top",
+                "picture": "/images/rezeroVolume2.jpg",
+                "price": 50.00
+            },{
+                "id":5,
+                "name": "Percy Jackson e o ladrão de raios",
+                "description": "",
+                "picture": "/images/ladraoDeRaios.jpg",
+                "price": 32.00
+            } 
+        ]
+        }
+    ] 
+}

@@ -1,0 +1,43 @@
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sliderImgContainer{
+    width: 100%;
+    height:200px;
+}
+
+.sliderImgContainer img{
+    width: 100%;
+    height:100%;
+}
+
+.sliderContainer svg{
+    position: absolute;
+    fill: var(--Branco);
+}
+
+.sliderContainer svg:nth-child(1){
+    margin-left:1%;
+}
+
+.sliderContainer svg:nth-child(3){
+    margin-left:96%;
+}
+
+// .sliderImage{
+//     animation: slide-in 0.5s ease forwards;
+// }
+
+// @keyframes slide-in {
+//     from {
+//       transform: translateX(100%);
+//     }
+//     to {
+//       transform: translateX(0);
+//     }
+// }
+  
+  

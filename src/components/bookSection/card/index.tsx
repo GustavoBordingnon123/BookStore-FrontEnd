@@ -1,5 +1,6 @@
 import styles from './card.module.scss';
 import { AiFillHeart } from 'react-icons/ai'
+import Button from '../../butoon/index';
 
 interface booksProps{
    name: string,
@@ -34,8 +35,8 @@ export default function Card(books:booksProps){
                     <h4>R$ {books.price}</h4>
                 </div>
                 
-                <button className={styles.button}>COMPRAR</button>
-
+                <Button />
+                
             </div>
         </>
     )

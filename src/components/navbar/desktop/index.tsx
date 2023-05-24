@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Navbar.module.scss'
-import logoIcon  from '../images/Logo.png'
+import styles from './Navbar.module.scss';
+import logoIcon  from '../../images/Logo.png'
 import { AiOutlineUser } from 'react-icons/ai'
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
@@ -18,7 +18,7 @@ export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: 
     }
     
     return(
-        <header className={styles.header}>
+        <nav className={styles.navbar}>
             <div className={styles.container}>
             
                 <img src={logoIcon} alt="Logo" />
@@ -46,6 +46,6 @@ export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: 
                 </div>
 
             </div>
-        </header>
+        </nav>
     )
 }

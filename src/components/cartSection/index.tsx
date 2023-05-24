@@ -17,12 +17,19 @@ export default function CartSection({ isCartVisible,setIsCartVisible,userData}: 
     const slideDirection = isCartVisible ? styles.slideRight : styles.slideLeft;
     const itens = userData.cartItens;
 
-    let [totalValue,setTotalValue] = React.useState(Number);
 
     function simularCompra(){
         setIsCartVisible(false)
         alert('COMPRA REALIZADA COM SUCESSO');
     }
+
+    function calcularPagamentoFinal(){
+        const total = itens.map((card: any) => card.price)
+        .reduce((total: number, price: number) => total + price, 0);
+        return total;
+    }
+
+    const totalValue = calcularPagamentoFinal();
 
     return(
         
@@ -57,7 +64,7 @@ export default function CartSection({ isCartVisible,setIsCartVisible,userData}: 
                     </div>
 
                     <div className={styles.footerCart}>
-                        <p>TOTAL: R$ 50.0</p>
+                        <p>Valor a pagar : R${totalValue}</p>
                         <button onClick={simularCompra}>COMPRAR</button>
                     </div>
 

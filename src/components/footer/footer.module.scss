@@ -57,8 +57,11 @@ footer {
 
 @media only screen and (max-width: 900px){
 
+    .socialMediaContainer{
+        width: 75%;
+    }
+
     .socialMediaContainer a{
         width: 120px;
     }
-
 }

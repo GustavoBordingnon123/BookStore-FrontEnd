@@ -37,6 +37,7 @@
         }, 
         {
             "id":6,
+            "idAuthor" : 3,
             "name": "O poder do hábito",
             "description": "",
             "picture": "/images/habito.jpg",

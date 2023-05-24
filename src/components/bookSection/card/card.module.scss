@@ -14,13 +14,13 @@
 
 .imagesContainer {
     display: flex;
-    justify-content: center;
     width: 100%;
     margin-left:10%;
 }
 
 .imagesContainer img{
     max-width: 130px;
+    margin-left:20%;
 }
 
 .favoritar{
@@ -31,6 +31,8 @@
     width: 30px;
     background-color: var(--Azul);
     border-radius: 30px;
+    margin-top:-5%;
+    margin-left:8%;
 }
 
 .favoritar:hover{
@@ -61,21 +63,4 @@
 
 .textContainer h4{
     color: var(--Azul);
-}
-
-.button {
-    width:50%;
-    height:20px;
-    color: var(--Branco);;
-    background-color: var(--Azul);
-    border-radius: 3px;
-    margin-top: 5%;
-    padding-top:5px;
-    padding-bottom: 5px;
-    text-align: center;
-}
-
-.button:hover {
-    cursor: pointer;
-    opacity: 0.5;
 }

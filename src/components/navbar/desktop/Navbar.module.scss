@@ -7,7 +7,7 @@
     --vermelho: #FF0000;
 }
 
-.header{
+.navbar{
     height:100px;
     width:100%;
     background-color: var(--Azul);
@@ -23,6 +23,11 @@
     color: var(--Branco);
 }
 
+.navbar img:hover, .navbar svg:hover, .navbar label:hover {
+    cursor: pointer;
+    opacity:0.8;
+}
+
 .container svg{
     fill:var(--Branco);
 }
@@ -32,7 +37,7 @@
     height: 30%;
     border-radius:3px;
     background-color:var(--Cinza) ;
-    background-image: url('../images/search.png');
+    background-image: url('../../images/search.png');
     background-repeat:no-repeat;
     background-position: 98%;
     background-size:20px;

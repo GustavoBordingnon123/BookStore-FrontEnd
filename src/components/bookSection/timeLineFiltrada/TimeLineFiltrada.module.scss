@@ -24,3 +24,12 @@
 .cardContainer{
     margin: 1%;
 }
+
+@media screen and (max-width: 1100px){
+    .cardsSection {
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+}

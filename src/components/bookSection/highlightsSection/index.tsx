@@ -4,12 +4,15 @@ import config from '../../config.json';
 
 interface sectionProps {
     title: string;
+    indices: [number,number];
     cards?: [];
 }
   
 export default function BookSection(sectionProps:sectionProps){
 
     const Books = config.books;
+
+    const indicesValores = sectionProps.indices;
 
     return(
         <>
@@ -18,7 +21,7 @@ export default function BookSection(sectionProps:sectionProps){
                     <h2>{sectionProps.title}</h2>
                 </div>
                 <div className={styles.cardsContainer}>
-                    {Books.map((card) => {
+                    {Books.slice(indicesValores[0],indicesValores[1]).map((card) => {
                         return (
                             <>
                                <Card 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Navbar.module.scss';
+import { useNavigate } from 'react-router-dom';
 import logoIcon  from '../../images/Logo.png'
 import { AiOutlineUser } from 'react-icons/ai'
 import { AiOutlineShoppingCart } from 'react-icons/ai';
@@ -7,6 +8,8 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: any){
 
+    const navigate = useNavigate();
+    
     function cartAnimation(){
 
         if(isCartVisible){
@@ -16,12 +19,16 @@ export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: 
         }
 
     }
+
+    const goToHome = () => {
+        navigate(`/home`);
+    };
     
     return(
         <nav className={styles.navbar}>
             <div className={styles.container}>
             
-                <img src={logoIcon} alt="Logo" />
+                <img src={logoIcon} alt="Logo" onClick={goToHome} />
 
                 <input 
                     className={styles.input} 
@@ -38,7 +45,6 @@ export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: 
                 <p> | </p>
 
                 <div className={styles.cartContainer}>
-                    {/* <div className={styles.carrinhoQtdItens}><p>1</p></div> */}
                     <AiOutlineShoppingCart 
                         size={32} 
                         onClick={cartAnimation}

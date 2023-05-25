@@ -28,6 +28,7 @@ export default function Home(){
    
   const [busca,setBusca] = React.useState("");
   const [isCartVisible,setIsCartVisible] = React.useState(false);
+  const [idBookviewPage,setidBookviewPage] = React.useState();
 
   return (
     <>
@@ -49,9 +50,22 @@ export default function Home(){
 
       {busca === "" ? (
         <div className='normalHomePage'>
-          <BookSection title='Em destaque:'/>
-          <BookSection title='Mais vendidos:'/>
-          <BookSection title='Recomendações:'/>
+
+          <BookSection 
+            title='Em destaque:' 
+            indices={[0,6]}
+          />
+
+          <BookSection 
+            title='Economia: ' 
+            indices={[7,12]}
+          />
+
+          <BookSection 
+            title='Quadrinhos:' 
+            indices={[13,18]}
+          />
+        
         </div>
       ) : (
         <div>

@@ -11,23 +11,26 @@ import config from '../config.json';
 import Button from '../butoon';
 import Card from '../bookSection/card/index';
 
+
 export default function BookAbout(){
 
     const Books = config.books;
 
-
+    const id = 2;
+    const BookInfos = config.books.find((livro) => livro.id === id);
+    
     return(
         <>
             <div className={styles.bookAbout}>
 
                 <div className={styles.capa}>
-                    <img src={capaTeste} />
+                    <img src={BookInfos?.picture} />
                 </div>
 
                 <div className={styles.textoContainer}>
 
                     <div className={styles.head}>
-                        <p className={styles.titulo}>Re:zero volume 1</p>
+                        <p className={styles.titulo}>{BookInfos?.name}</p>
 
                         <div className={styles.avaliacaoContainer}> 
                             <div>
@@ -48,16 +51,13 @@ export default function BookAbout(){
                         <p className={styles.titulo}>Descrição</p>
 
                         <p className={styles.bookDescription}>
-                            Lorem Ipsum é simplesmente uma simulação de texto da 
-                            indústria tipográfica e de impressos, e vem sendo 
-                            utilizado desde o século XVI, quando um impressor 
-                            Lorem Ipsum é simplesmente uma simulação de 
+                            {BookInfos?.description}
                         </p>
 
                     </div>
 
 
-                    <p className={styles.price}>R$: 50.00</p>
+                    <p className={styles.price}>R$ {BookInfos?.price}</p>
 
                     <div className={styles.comprar}>
 
@@ -92,7 +92,7 @@ export default function BookAbout(){
                 <div className={styles.bookDimensions}> 
 
                     <div className={styles.bookRight}>
-                        <img src={capaTeste} />    
+                        <img src={BookInfos?.picture} />    
                         <p>100CM</p>    
                     </div>
 

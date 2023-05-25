@@ -13,6 +13,9 @@ interface BookProps {
 }
 
 export default function Card(book: BookProps) {
+
+  const [bookViewpageId,setBookViewpageId] = React.useState();
+
   const navigate = useNavigate();
 
   const capaTeste = book.picture;
@@ -21,9 +24,8 @@ export default function Card(book: BookProps) {
     alert('Você favoritou');
   };
 
-  const handleDetalhesClick = () => {
+  const goToBookviewPage = () => {
     navigate(`/book/${book.id}`);
-    // navigate(`/bookViewPage`);
   };
 
   return (
@@ -40,7 +42,7 @@ export default function Card(book: BookProps) {
         <h4>R$ {book.price}</h4>
       </div>
 
-      <Button text="Detalhes" onClick={handleDetalhesClick} />
+      <Button text="Detalhes" onClick={goToBookviewPage} />
 
       <Button text="Comprar" />
     </div>

@@ -41,8 +41,105 @@
             "name": "O poder do hábito",
             "description": "",
             "picture": "/images/habito.jpg",
-            "price":72.00
+            "price":82.00
+        },
+
+
+        {
+            "id":7,
+            "idAuthor" : 7,
+            "name": "China o sociliasmo no século 21",
+            "description": "",
+            "picture": "/images/economia/chinaCapa.jpg",
+            "price":122.00
+        },{
+            "id":8,
+            "idAuthor" : 8,
+            "name": "The world of mana",
+            "description": "",
+            "picture": "/images/economia/manaCapa.jpg",
+            "price":53.00
+        },{
+            "id":9,
+            "idAuthor" : 9,
+            "name": " brasil uma economia que não aprende",
+            "description": "",
+            "picture": "/images/economia/economiaBrasilCapa.jpg",
+            "price":110.00
+        },{
+            "id":10,
+            "idAuthor" : 10,
+            "name": "Primo rico",
+            "description": "",
+            "picture": "/images/economia/primoRicoCapa.jpg",
+            "price":181.00
         }
+        ,{
+            "id":11,
+            "idAuthor" : 11,
+            "name": "Startup enxuta",
+            "description": "",
+            "picture": "/images/economia/startupCapa.jpg",
+            "price":65.00
+        }
+        ,{
+            "id":13,
+            "idAuthor" : 13,
+            "name": "Introdução a economia",
+            "description": "",
+            "picture": "/images/economia/economiaCapa.jpg",
+            "price":65.00
+        },
+
+
+        {
+            "id":14,
+            "idAuthor" : 14,
+            "name": "Eternos - avengers",
+            "description": "",
+            "picture": "/images/comics/eternosCapa.jpg",
+            "price":30.00
+        },{
+            "id":15,
+            "idAuthor" : 15,
+            "name": "Flash",
+            "description": "",
+            "picture": "/images/comics/flashCapa.jpg",
+            "price":33.00
+        },{
+            "id":16,
+            "idAuthor" : 16,
+            "name": " Vingadores",
+            "description": "",
+            "picture": "/images/comics/vingadorCapa.jpg",
+            "price":110.00
+        },{
+            "id":17,
+            "idAuthor" : 17,
+            "name": "Batman",
+            "description": "",
+            "picture": "/images/comics/batmanCapa.jpg",
+            "price":181.00
+        }
+        ,{
+            "id":18,
+            "idAuthor" : 18,
+            "name": "Homem aranha",
+            "description": "",
+            "picture": "/images/comics/miranhaCapa.jpg",
+            "price":65.00
+        }
+        ,{
+            "id":19,
+            "idAuthor" : 19,
+            "name": "Superman o homem de aço",
+            "description": "",
+            "picture": "/images/comics/supermanCapa.jpg",
+            "price":55.00
+        }
+
+
+        
     ],
     "users":[
         {

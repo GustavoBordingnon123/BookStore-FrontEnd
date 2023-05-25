@@ -1,9 +1,14 @@
 import styles from './button.module.scss';
 
-export default function Button(){
-    return(
-        <>
-            <button className={styles.button}>COMPRAR</button>
-        </>
-    );
+interface ButtonProps {
+  text: string;
+  onClick?: () => void;
+}
+
+export default function Button({ text, onClick }: ButtonProps) {
+  return (
+    <button className={styles.button} onClick={onClick}>
+      {text}
+    </button>
+  );
 }

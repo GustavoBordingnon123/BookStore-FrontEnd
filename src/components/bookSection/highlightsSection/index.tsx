@@ -22,6 +22,7 @@ export default function BookSection(sectionProps:sectionProps){
                         return (
                             <>
                                <Card 
+                                    id={card.id}
                                     name={card.name} 
                                     description={card.description} 
                                     picture={card.picture} 

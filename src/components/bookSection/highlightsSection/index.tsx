@@ -6,6 +6,7 @@ interface sectionProps {
     title: string;
     indices: [number,number];
     cards?: [];
+    setidBookviewPage: any;
 }
   
 export default function BookSection(sectionProps:sectionProps){
@@ -30,6 +31,7 @@ export default function BookSection(sectionProps:sectionProps){
                                     description={card.description} 
                                     picture={card.picture} 
                                     price={card.price}
+                                    setidBookviewPage={sectionProps.setidBookviewPage}
                                 />
                             </>
                         )

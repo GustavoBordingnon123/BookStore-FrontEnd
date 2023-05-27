@@ -21,7 +21,7 @@ export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: 
     }
 
     const goToHome = () => {
-        navigate(`/home`);
+        navigate(`/`);
     };
     
     return(

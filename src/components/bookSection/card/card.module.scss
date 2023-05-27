@@ -39,12 +39,10 @@
     cursor: pointer;
 }
 
-.favoritar svg{
-    fill: var(--Cinza);
-}
-
-.favoritar svg:hover{
-    fill: var(--vermelho);
+.animation {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .textContainer {

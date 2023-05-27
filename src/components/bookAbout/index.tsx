@@ -96,7 +96,10 @@ export default function BookAbout(){
                         <p>100CM</p>    
                     </div>
 
-                    <p>150cm</p>
+                    <div className={styles.bookWidth}>
+                        <p>150cm</p>
+                    </div>
+                  
 
                 </div>
 

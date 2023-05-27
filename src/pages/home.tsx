@@ -53,16 +53,22 @@ export default function Home(){
 
           <BookSection 
             title='Em destaque:' 
+            // idBookviewPage={idBookviewPage}
+            setidBookviewPage={setidBookviewPage}
             indices={[0,6]}
           />
 
           <BookSection 
             title='Economia: ' 
+            // idBookviewPage={idBookviewPage}
+            setidBookviewPage={setidBookviewPage}
             indices={[7,12]}
           />
 
           <BookSection 
             title='Quadrinhos:' 
+            // idBookviewPage={idBookviewPage}
+            setidBookviewPage={setidBookviewPage}
             indices={[13,18]}
           />
         

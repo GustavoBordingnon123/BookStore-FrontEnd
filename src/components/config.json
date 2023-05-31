@@ -1,0 +1,185 @@
+{
+    "books": [
+        {
+            "id":1,
+            "name": "Re:zero volume 13",
+            "description": "Sendo obrigado a encarar o segundo teste de uma maneira inesperada, Subaru Natsuki descobriu o cenário do outro lado do inferno. Quem cercava o garoto - que soube do próprio crime, foi traído pela real personalidade da bruxa na qual buscou salvação e ficou abalado - eram as seis bruxas intituladas com os nomes dos pecados capitais e a última bruxa, que as destruiu. O coração de Subaru Natsuki, que não conseguia salvar o que queria ao final de fúria e choro, estava sendo desgastado. No entanto, uma última esperança foi estendida a Subaru, o qual foi derrubado no fundo do poço, por um aliado. A esperança virou um punho duro, batendo forte e eficaz, dizendo que não há necessidade de desistir.?Vamos fazer uma aposta. Usando o meu desejo e o seu desejo de fichas. O décimo terceiro ato com amores se cruzando da história de grande sucesso - soará, agora, o som de retorno que faz querer chorar.",
+            "picture": "/images/livrosCapas/manga/rezero13.jpg",
+            "price": 26.90,
+            "authorId":1,
+            "qntPages":480,
+            "language":"pt-br",
+            "editora": "New Pop"
+
+        },
+        {
+            "id":2,
+            "name": "Dragon Ball 31",
+            "description": "Cell está a um passo de se tornar a entidade perfeita!! Para impedir que isso aconteça, nossos heróis enfrentarão um treinamento intensivo, enquanto Piccolo, unido a Kamisama, e os outros tentam ganhar tempo!!",
+            "picture": "/images/livrosCapas/manga/dragonBall.jpg",
+            "price": 24.90,
+            "authorId":2,
+            "qntPages":192,
+            "language":"pt-br",
+            "editora": "PANINI COMICS"
+        },
+        {
+            "id":3,
+            "name": "Naruto Gold 31",
+            "description": "A batalha mortal chega ao fim! Sasori, que transformou o próprio corpo em marionete, ataca Sakura e Chiyo-baa. A grande luta tem um desfecho surpreendente... E será que um novo sharingan vai encerrar o embate de Deidara contra Naruto e Kakashi?!",
+            "picture": "/images/livrosCapas/manga/naruto.jpg",
+            "price": 29.90,
+            "authorId":3,
+            "qntPages":192,
+            "language":"pt-br",
+            "editora": "PANINI COMICS"
+        },
+        {
+            "id":4,
+            "name": "Re:zero volume 2",
+            "description": "um isekai top",
+            "picture": "/images/rezeroVolume2.jpg",
+            "price": 50.00
+        },
+        {
+            "id":5,
+            "name": "Percy Jackson e o ladrão de raios",
+            "description": "",
+            "picture": "/images/ladraoDeRaios.jpg",
+            "price": 32.00
+        }, 
+        {
+            "id":6,
+            "idAuthor" : 3,
+            "name": "O poder do hábito",
+            "description": "",
+            "picture": "/images/habito.jpg",
+            "price":82.00
+        },
+
+
+        {
+            "id":7,
+            "idAuthor" : 7,
+            "name": "China o sociliasmo no século 21",
+            "description": "",
+            "picture": "/images/economia/chinaCapa.jpg",
+            "price":122.00
+        },{
+            "id":8,
+            "idAuthor" : 8,
+            "name": "The world of mana",
+            "description": "",
+            "picture": "/images/economia/manaCapa.jpg",
+            "price":53.00
+        },{
+            "id":9,
+            "idAuthor" : 9,
+            "name": " brasil uma economia que não aprende",
+            "description": "",
+            "picture": "/images/economia/economiaBrasilCapa.jpg",
+            "price":110.00
+        },{
+            "id":10,
+            "idAuthor" : 10,
+            "name": "Primo rico",
+            "description": "",
+            "picture": "/images/economia/primoRicoCapa.jpg",
+            "price":181.00
+        }
+        ,{
+            "id":11,
+            "idAuthor" : 11,
+            "name": "Startup enxuta",
+            "description": "",
+            "picture": "/images/economia/startupCapa.jpg",
+            "price":65.00
+        }
+        ,{
+            "id":13,
+            "idAuthor" : 13,
+            "name": "Introdução a economia",
+            "description": "",
+            "picture": "/images/economia/economiaCapa.jpg",
+            "price":65.00
+        },
+
+
+        {
+            "id":14,
+            "idAuthor" : 14,
+            "name": "Eternos - avengers",
+            "description": "",
+            "picture": "/images/comics/eternosCapa.jpg",
+            "price":30.00
+        },{
+            "id":15,
+            "idAuthor" : 15,
+            "name": "Flash",
+            "description": "",
+            "picture": "/images/comics/flashCapa.jpg",
+            "price":33.00
+        },{
+            "id":16,
+            "idAuthor" : 16,
+            "name": " Vingadores",
+            "description": "",
+            "picture": "/images/comics/vingadorCapa.jpg",
+            "price":110.00
+        },{
+            "id":17,
+            "idAuthor" : 17,
+            "name": "Batman",
+            "description": "",
+            "picture": "/images/comics/batmanCapa.jpg",
+            "price":181.00
+        }
+        ,{
+            "id":18,
+            "idAuthor" : 18,
+            "name": "Homem aranha",
+            "description": "",
+            "picture": "/images/comics/miranhaCapa.jpg",
+            "price":65.00
+        }
+        ,{
+            "id":19,
+            "idAuthor" : 19,
+            "name": "Superman o homem de aço",
+            "description": "",
+            "picture": "/images/comics/supermanCapa.jpg",
+            "price":55.00
+        }
+
+
+        
+    ],
+    "users":[
+        {
+            "id": 1,
+            "name": "Gustavo Bordignon",
+            "email": "gustavo.bordignon@outlook.com",
+            "password": "123",
+            "cartItens": [ {
+                "id":2,
+                "name": "O cavaleiro preso na armadura",
+                "description": "uma fabula que conta a historia de autoconhecimento",
+                "picture": "/images/cavaleiro.jpg",
+                "price": 20.00
+            },{
+                "id":4,
+                "name": "Re:zero volume 2",
+                "description": "um isekai top",
+                "picture": "/images/rezeroVolume2.jpg",
+                "price": 50.00
+            },{
+                "id":5,
+                "name": "Percy Jackson e o ladrão de raios",
+                "description": "",
+                "picture": "/images/ladraoDeRaios.jpg",
+                "price": 32.00
+            } 
+        ]
+        }
+    ] 
+}

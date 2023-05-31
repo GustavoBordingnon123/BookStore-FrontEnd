@@ -1,0 +1,222 @@
+.lineContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: var(--Azul);
+}
+
+.bookAbout{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+}
+
+.capa, .textoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.capa{
+    align-items: center;
+}
+
+
+.capa img{
+    max-height: 400px;
+    max-width:350px;
+}
+
+.textoContainer .head{
+    width: 90%;
+    border-bottom: 2px solid var(--Azul);
+}
+
+.textoContainer .titulo{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--Azul);
+    line-height: 65px;
+}
+
+.textoContainer .avaliacaoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom:3%;
+}
+
+.textoContainer .descricao{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+.textoContainer .price {
+    font-size:28px;
+    color: var(--Azul);
+    margin-bottom: 3%;
+}
+
+.textoContainer .comprar {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.textoContainer .comprar button {
+    margin-top: 0% !important;
+}
+
+.textoContainer .comprar .quantidadeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:15%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bookTechnicalInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 5%;
+}
+
+.bookTechnicalInfo .textoContainer {
+    margin-left:5%;
+}
+
+.bookTechnicalInfo .textoContainer p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.bookTechnicalInfo .bookDimensions{
+    height: 100%;
+}
+
+.bookTechnicalInfo .bookDimensions .bookRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.bookTechnicalInfo .bookDimensions .bookRight img{
+    height: 80%;
+    padding-bottom:15%;
+    padding-right: 15%;
+    border-bottom: 2px solid var(--Azul);
+    border-right: 2px solid var(--Azul);
+}
+
+.bookTechnicalInfo .bookDimensions .bookRight p {
+    margin-left: 1%;
+}
+
+.buyAlso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 5%;
+    border-bottom: 2px solid var(--Azul);
+}
+
+.buyAlso .titulo {
+    font-size: 32px;
+    color: var(--Azul);
+    margin-left: 3%;
+}
+
+.booksBuyAlso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top:1%;
+}
+
+@media screen and (max-width: 1100px){
+
+    .bookAbout{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding-top: 5%;
+    }
+
+    .textoContainer .head{
+        margin-bottom: 5%;
+    }
+
+    .bookAbout .textoContainer {
+        align-items: center;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .textoContainer .titulo{
+        font-size: 26px;
+        line-height: normal;
+        margin-bottom: 2%;
+    }
+
+    .textoContainer .avaliacaoContainer{
+        width: 100%;
+    }
+
+    .bookTechnicalInfo {
+        height: auto;
+        align-items: stretch;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .textoContainer .comprar {
+        margin-bottom: 5%;
+    }
+
+    .capa, .textoContainer {
+        width: 100%;
+    }
+
+    .bookTechnicalInfo .bookDimensions .bookRight{
+        margin-top: 5%;
+    }
+
+    .bookTechnicalInfo .bookDimensions .bookRight img{
+        width: 30%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+        margin-left: 10%;
+    }
+    
+    .bookWidth {
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+
+    .booksBuyAlso {
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+
+}

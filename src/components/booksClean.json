@@ -1,0 +1,182 @@
+{
+    "books": [
+        {
+            "Mangas": [
+                {
+                    "id":1,
+                    "name": "Re:zero volume 13",
+                    "description": "Sendo obrigado a encarar o segundo teste de uma maneira inesperada, Subaru Natsuki descobriu o cenário do outro lado do inferno. Quem cercava o garoto - que soube do próprio crime, foi traído pela real personalidade da bruxa na qual buscou salvação e ficou abalado - eram as seis bruxas intituladas com os nomes dos pecados capitais e a última bruxa, que as destruiu. O coração de Subaru Natsuki, que não conseguia salvar o que queria ao final de fúria e choro, estava sendo desgastado. No entanto, uma última esperança foi estendida a Subaru, o qual foi derrubado no fundo do poço, por um aliado. A esperança virou um punho duro, batendo forte e eficaz, dizendo que não há necessidade de desistir.?Vamos fazer uma aposta. Usando o meu desejo e o seu desejo de fichas. O décimo terceiro ato com amores se cruzando da história de grande sucesso - soará, agora, o som de retorno que faz querer chorar.",
+                    "picture": "/images/livrosCapas/manga/rezero13.jpg",
+                    "price": 26.90,
+                    "authorId":1,
+                    "qntPages":480,
+                    "language":"pt-br",
+                    "editora": "New Pop"
+        
+                },
+                {
+                    "id":2,
+                    "name": "Dragon Ball 31",
+                    "description": "Cell está a um passo de se tornar a entidade perfeita!! Para impedir que isso aconteça, nossos heróis enfrentarão um treinamento intensivo, enquanto Piccolo, unido a Kamisama, e os outros tentam ganhar tempo!!",
+                    "picture": "/images/livrosCapas/manga/dragonBall.jpg",
+                    "price": 24.90,
+                    "authorId":2,
+                    "qntPages":192,
+                    "language":"pt-br",
+                    "editora": "PANINI COMICS"
+                },
+                {
+                    "id":3,
+                    "name": "Naruto Gold 31",
+                    "description": "A batalha mortal chega ao fim! Sasori, que transformou o próprio corpo em marionete, ataca Sakura e Chiyo-baa. A grande luta tem um desfecho surpreendente... E será que um novo sharingan vai encerrar o embate de Deidara contra Naruto e Kakashi?!",
+                    "picture": "/images/livrosCapas/manga/naruto.jpg",
+                    "price": 29.90,
+                    "authorId":3,
+                    "qntPages":192,
+                    "language":"pt-br",
+                    "editora": "PANINI COMICS"
+                },
+                {
+                    "id":6,
+                    "name": "Demon Slayer - Kimetsu No Yaiba 10",
+                    "description": "A Oiran Warabihime é a oni que controla todo o distrito das flores! Ao se juntar à parte de seu corpo que estava dividida, ela fica ainda mais poderosa e ataca Tanjirou com todas as suas forças!! Nosso herói recorre à Hinokami Kagura, mas parece que está prestes a exceder seu limite!! Nezuko e Uzui aparecem para lutar no lugar de Tanjirou, mas a batalha toma rumos inesperados!!",
+                    "picture": "/images/livrosCapas/manga/demonSlayer.jpeg",
+                    "price": 33.90,
+                    "authorId":5,
+                    "qntPages":200,
+                    "language":"pt-br",
+                    "editora": "PANINI COMICS"
+                },
+                {
+                    "id":5,
+                    "name": "Record Of Ragnarok Vol 1",
+                    "description": "Na conferência milenar dos deuses, responsável por definir o futuro da raça humana, foi decidido extingui-la. Para evitar isso, treze supremos da humanidade vão lutar por sua sobrevivência contra os treze deuses supremos dos reinos dos céus!! Dá-se o início das batalhas valendo o destino da humanidade!!!",
+                    "picture": "/images/livrosCapas/manga/recordRagnarok.jpeg",
+                    "price": 29.90,
+                    "authorId":4,
+                    "qntPages":194,
+                    "language":"pt-br",
+                    "editora": "New Pop"
+                },
+                {
+                    "id":4,
+                    "name": "Naruto Gold 39",
+                    "description": "A batalha mortal chega ao fim! Sasori, que transformou o próprio corpo em marionete, ataca Sakura e Chiyo-baa. A grande luta tem um desfecho surpreendente... E será que um novo sharingan vai encerrar o embate de Deidara contra Naruto e Kakashi?!",
+                    "picture": "/images/livrosCapas/manga/naruto2.jpg",
+                    "price": 29.90,
+                    "authorId":3,
+                    "qntPages":192,
+                    "language":"pt-br",
+                    "editora": "PANINI COMICS"
+                },
+                {
+                    "id":6,
+                    "name": "Demon Slayer - Kimetsu No Yaiba 20",
+                    "description": "Himejima, o Hashira das Rochas e Shinazugawa, o Hashira do Vento estão enfrentando o Primeiro Jougen! Durante essa dificílima batalha, ambos manifestam a marca e complementam as habilidades um do outro num fantástico trabalho em equipe, mas mesmo assim, continuam sendo terrivelmente pressionados pela força avassaladora do Oni!! Até que Genya consome parte do Primeiro Jougen e se recupera... Qual será a conclusão da batalha?!",
+                    "picture": "/images/livrosCapas/manga/demonSlayer2.jpeg",
+                    "price": 33.90,
+                    "authorId":5,
+                    "qntPages":192,
+                    "language":"pt-br",
+                    "editora": "PANINI COMICS"
+                },{
+                    "id":6,
+                    "name": "Record Of Ragnarok Vol 2",
+                    "description": "A batalha entre o supremo dos três reinos, Lü Bu Fengxian contra o supremo deus nórdico, Thor finalmente chega ao seu desfecho!! E as cartas para a segunda batalha são: O primeiro humano Adão versus o deus todo poderoso Zeus!!  Ambos, homens inesperados, que colocam em seus punhos a determinação e o orgulho da espécie junto do amor fraternal e começam a luta com tudo em uma grande porradaria!!!",
+                    "picture": "/images/livrosCapas/manga/recordRagnarok2.jpeg",
+                    "price": 29.90,
+                    "authorId":4,
+                    "qntPages":192,
+                    "language":"pt-br",
+                    "editora": "New Pop"
+                }
+            ]
+        },
+        {
+            "Quadrinhos - hq":
+            [  {
+                "id":7,
+                "name": "O Espetacular Homem-Aranha Vol. 1",
+                "description": "Algo aconteceu com Peter há alguns meses e fez com que o Aranha se afastasse de suas responsabilidades, da cidade e de todos aqueles que importavam. Os vilões, porém, continuam por aí e com planos para Nova York. Como Parker vai conseguir dar conta do desastre em sua vida pessoal e de todo esse crime? Para além disso, uma nova ameaça começa a projetar sua sombra sobre o Aranhaverso, e Aranhas de todos os cantos da Grande Teia já começam a sentir seu impacto: das Terras Altas à vida universitária, ao tempo dos... dinossauros? Uma nova (e, claro, espetacular!) fase do Aracnídeo começa bem aqui!",
+                "picture": "/images/livrosCapas/quadrinho/homemAranha.jpeg",
+                "price": 11.99,
+                "authorId":5,
+                "qntPages":80,
+                "language":"pt-br",
+                "editora": "Marvel-COMICS"
+            },{
+                "id":7,
+                "name": "O Espetacular Homem-Aranha Vol. 1",
+                "description": "Do premiado roteirista Alan Moore (Watchmen, V de Vingança) conta como um dia ruim na vida de um homem pode significar a linha que separa a sanidade da loucura. Principalmente quando se trata do Coringa, o maior e mais conhecido vilão do mundo dos quadrinhos. Os desenhos de Brian Bolland (Camelot 3000), um dos maiores ilustradores dos quadrinhos, elevaram a história praticamente à perfeição retratando com maestria o mundo imaginado por Alan Moore. Mas faltava um detalhe para completar a obra. Bolland não pôde colorir a edição original, e agora, vinte anos depois, isso foi corrigido e as cores foram completamente refeitas pelo artista, seguindo fielmente a sua imaginação. Edição obrigatória para os fãs do Coringa, do Batman e dos quadrinhos.",
+                "picture": "/images/livrosCapas/quadrinho/batman.jpeg",
+                "price": 40.00,
+                "authorId":6,
+                "qntPages":82,
+                "language":"pt-br",
+                "editora": "Dc-COMICS"
+            },{
+                "id":7,
+                "name": "Spawn Compendium, Color Edition, Volume 1 ",
+                "description": "FOR THE FIRST TIME IN FULL COLOR! TODD McFARLANE unleashed his signature creation, SPAWN, in 1992. In doing so, he created the most successful independent comic book in history. Add in collaborations with industry giants ALAN MOORE, FRANK MILLER, TONY DANIEL, and GRANT MORRISON, and SPAWN's future as a  legend was sealed. Collected now in full color, McFARLANE's hyper-detailed artwork comes to life like never before. Relive all the excitement of everyone's favorite anti-hero with this new collection.",
+                "picture": "/images/livrosCapas/quadrinho/spawn.jpg",
+                "price": 463.00,
+                "authorId":7,
+                "qntPages":1136,
+                "language":"English",
+                "editora": "Image-comics"
+            },{
+                "id":8,
+                "name": "Superman - Grandes Astros - Volume 1",
+                "description": "Setenta anos após ser criado e apresentado ao planeta por Joe Shuster e Jerry Siegel, Superman ganhou, em meados da década passada, uma reinterpretação surpreendente que chocou completa e positivamente o mundo das HQs e redefiniu todos os limites de um personagem icônico, que acreditava-se ser inalterável. Por cortesia da genial e excêntrica mente do roteirista Grant Morrison e do traço incomparável do desenhista Frank Quitely, o Homem de Aço (e seus milhões de fãs pelo mundo) foram presenteados com uma obra-prima sem precedentes, publicada em doze partes sob o título Grandes Astros Superman. Agora, essa imperdível obra volta a ser publicada no Brasil pela Panini Books, em uma edição única e com o tratamento condizente à sua relevância e qualidade. Grandes Astros Superman Ed. Definitiva traz a história na integra em acabamento e formato diferenciados, e acompanhada por extras inéditos no Brasil!",
+                "picture": "/images/livrosCapas/quadrinho/superman.jpg",
+                "price": 89.00,
+                "authorId":8,
+                "qntPages":304,
+                "language":"pt-br",
+                "editora": "Dc-COMICS"
+            },{
+                "id":8,
+                "name": "Hulk Contra O Mundo",
+                "description": "A VINGANÇA DO QUEBRA-MUNDOS O Hulk foi traído pelos Illuminati e enviado para outro planeta. Lá, ele lutou, liderou uma revolução e formou um novo lar, uma nova família e finalmente encontrou na felicidade. Mas uma cataclísmica explosão lhe tirou tudo. Agora, o Golias Esmeralda está de volta, mais furioso do que nunca e determinado a fazer com que os culpados paguem caro por seus crimes! E, quanto mais bravo fica, mais forte o Hulk se torna! Os mais poderosos heróis da Terra terão de se unir para salvar a própria vida e evitar que o Gigante de Jade destrua o planeta enquanto busca sua merecida desforra. Mas até onde esses supostos heróis estão dispostos a chegar para deter seu velho colega? Com roteiros de Greg Pak (Planeta Hulk) e arte de John Romita Jr. (Demolidor – O Homem Sem Medo), Gary Frank (Poder Supremo) e outros grandes talentos dos quadrinhos. Este volume de 564 páginas reúne as edições World War Hulk: Prologue; World War Hulk 1-5, The Incredible Hulk 106-111, World War Hulk Aftersmash e Wolrd War Hulk Aftersmash: Warbound 1-5.",
+                "picture": "/images/livrosCapas/quadrinho/hulk.jpg",
+                "price": 128.35,
+                "authorId":9,
+                "qntPages":560,
+                "language":"pt-br",
+                "editora": "Marvel-COMICS"
+            }
+            ]
+        }
+
+
+        
+    ],
+    "users":[
+        {
+            "id": 1,
+            "name": "Gustavo Bordignon",
+            "email": "gustavo.bordignon@outlook.com",
+            "password": "123",
+            "cartItens": [ {
+                "id":2,
+                "name": "O cavaleiro preso na armadura",
+                "description": "uma fabula que conta a historia de autoconhecimento",
+                "picture": "/images/cavaleiro.jpg",
+                "price": 20.00
+            },{
+                "id":4,
+                "name": "Re:zero volume 2",
+                "description": "um isekai top",
+                "picture": "/images/rezeroVolume2.jpg",
+                "price": 50.00
+            },{
+                "id":5,
+                "name": "Percy Jackson e o ladrão de raios",
+                "description": "",
+                "picture": "/images/ladraoDeRaios.jpg",
+                "price": 32.00
+            } 
+        ]
+        }
+    ] 
+}

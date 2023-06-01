@@ -12,22 +12,25 @@ export default function BookViewPage() {
 
   const [busca,setBusca] = React.useState("");
   const [isCartVisible,setIsCartVisible] = React.useState(false);
+  const opacity = isCartVisible ? 'opMedium' : 'opFull';
+
 
   return (
     <>
-    
       <CartSection 
         isCartVisible={isCartVisible}
         setIsCartVisible={setIsCartVisible}
       />
-      <NavBar 
-        busca={busca} 
-        setBusca={setBusca} 
-        isCartVisible={isCartVisible} 
-        setIsCartVisible={setIsCartVisible}
-      />
-      <PerfilFormulario />
-      <Footer />
+      <div className={opacity}>
+        <NavBar 
+          busca={busca} 
+          setBusca={setBusca} 
+          isCartVisible={isCartVisible} 
+          setIsCartVisible={setIsCartVisible}
+        />
+        <PerfilFormulario />
+        <Footer />
+      </div>
     </>
   );
 }

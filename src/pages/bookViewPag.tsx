@@ -14,6 +14,7 @@ export default function BookViewPage() {
   const bookId = id ? parseInt(id) : undefined;
   const [busca,setBusca] = React.useState("");
   const [isCartVisible,setIsCartVisible] = React.useState(false);
+  const opacity = isCartVisible ? 'opMedium' : 'opFull';
 
 
   return (
@@ -22,16 +23,17 @@ export default function BookViewPage() {
         isCartVisible={isCartVisible}
         setIsCartVisible={setIsCartVisible}
       />
+      <div className={opacity}>
+        <NavBar 
+          busca={busca} 
+          setBusca={setBusca} 
+          isCartVisible={isCartVisible} 
+          setIsCartVisible={setIsCartVisible}
+        />
 
-      <NavBar 
-        busca={busca} 
-        setBusca={setBusca} 
-        isCartVisible={isCartVisible} 
-        setIsCartVisible={setIsCartVisible}
-      />
-
-      <BookAbout bookId={bookId} />
-      <Footer />
+        <BookAbout bookId={bookId} />
+        <Footer />
+      </div>
     </>
   );
 }

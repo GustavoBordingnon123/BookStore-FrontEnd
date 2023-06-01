@@ -28,6 +28,7 @@ export default function Home(){
    
   const [busca,setBusca] = React.useState("");
   const [isCartVisible,setIsCartVisible] = React.useState(false);
+  const opacity = isCartVisible ? 'opMedium' : 'opFull';
 
   return (
     <>
@@ -36,42 +37,44 @@ export default function Home(){
         isCartVisible={isCartVisible}
         setIsCartVisible={setIsCartVisible}
       />
-
-      <NavBar 
-        busca={busca} 
-        setBusca={setBusca} 
-        isCartVisible={isCartVisible} 
-        setIsCartVisible={setIsCartVisible}
-      />
-
-      {busca === "" ? (
-        <div className='normalHomePage'>
-               
-          <SlideSwipper />
-
-          <BookSection 
-            title='Em destaque:' 
-            indices={[0,6]}
-          />
-
-          <BookSection 
-            title='Manga: ' 
-            indices={[0,6]}
-          />
-
-          <BookSection 
-            title='Quadrinhos:' 
-            indices={[13,18]}
-          />
-        
-        </div>
-      ) : (
-        <div>
-          <TimeLineFiltrada busca={busca} />
-        </div>
-      )}
       
-      <Footer />
+      <div className={opacity}>
+        <NavBar 
+          busca={busca} 
+          setBusca={setBusca} 
+          isCartVisible={isCartVisible} 
+          setIsCartVisible={setIsCartVisible}
+        />
+
+        {busca === "" ? (
+          <div className='normalHomePage'>
+                
+            <SlideSwipper />
+
+            <BookSection 
+              title='Em destaque:' 
+              indices={[0,6]}
+            />
+
+            <BookSection 
+              title='Manga: ' 
+              indices={[0,6]}
+            />
+
+            <BookSection 
+              title='Quadrinhos:' 
+              indices={[13,18]}
+            />
+          
+          </div>
+        ) : (
+          <div>
+            <TimeLineFiltrada busca={busca} />
+          </div>
+        )}
+        
+        <Footer />
+      </div>
     </>
   );
 

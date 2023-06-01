@@ -5,10 +5,11 @@ import { AiFillHeart } from 'react-icons/ai';
 import Button from '../../butoon';
 import Swal from 'sweetalert2';
 
-import { animated, useSpring } from 'react-spring';
+import { Any, animated, useSpring } from 'react-spring';
 
 // Zustand
 import create from 'zustand';
+import  useStore from '../../../store';
 
 interface BookProps {
   id?: number;
@@ -22,17 +23,20 @@ interface BookProps {
 interface StoreState {
   bears: string[];
   addToBearList: (bear: string) => void;
+  increasePopulation: any;
 }
 
-const useStore = create<StoreState>((set) => ({
-  bears: [],
-  addToBearList: (bear) => set((state) => ({ bears: [...state.bears, bear] })),
-}));
 
 export default function Card(book: BookProps) {
+
+  const {setItems} = useStore();
+
   const navigate = useNavigate();
+
   const capaTeste = book.picture;
+  
   const [isAnimating, setIsAnimating] = useState(false);
+
   const [cart, setCart] = useState<BookProps[]>([]);
 
   const { transform } = useSpring({
@@ -48,8 +52,20 @@ export default function Card(book: BookProps) {
     setIsAnimating(!isAnimating);
   };
 
-  const addToCart = () => {
-    setCart([...cart, book]);
+  // const addToCart = () => {
+  //   setCart([...cart, book]);
+  //   Swal.fire({
+  //     position: 'top',
+  //     icon: 'success',
+  //     title: 'Adicionado ao carrinho',
+  //     showConfirmButton: false,
+  //     timer: 1500,
+  //   });
+  //   // window.location.reload();
+  // };
+
+  const handleSubmit = () => {
+    setItems(cart);
     Swal.fire({
       position: 'top',
       icon: 'success',
@@ -57,9 +73,9 @@ export default function Card(book: BookProps) {
       showConfirmButton: false,
       timer: 1500,
     });
-    // window.location.reload();
-  };
-
+  }
+  
+  
   useEffect(() => {
     const storedCart = localStorage.getItem('cart');
 
@@ -74,8 +90,8 @@ export default function Card(book: BookProps) {
     }
   }, [cart]);
 
-  const bears = useStore((state) => state.bears);
-  const addToBearList = useStore((state) => state.addToBearList);
+  const cartTest = useStore((state) => state.items)
+  console.log(cartTest);
 
   return (
     <div className={styles.container}>
@@ -96,7 +112,7 @@ export default function Card(book: BookProps) {
       </div>
 
       <Button text="Detalhes" onClick={goToBookviewPage} />
-      <Button text="Comprar" onClick={addToCart} />
+      <Button text="Comprar" onClick={handleSubmit} />
     </div>
   );
 }

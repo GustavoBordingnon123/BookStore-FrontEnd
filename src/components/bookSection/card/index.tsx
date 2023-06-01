@@ -8,8 +8,8 @@ import Swal from 'sweetalert2';
 import { Any, animated, useSpring } from 'react-spring';
 
 // Zustand
-import create from 'zustand';
-import  useStore from '../../../store';
+// import create from 'zustand';
+// import  useStore from '../../../store';
 
 interface BookProps {
   id?: number;
@@ -52,20 +52,8 @@ export default function Card(book: BookProps) {
     setIsAnimating(!isAnimating);
   };
 
-  // const addToCart = () => {
-  //   setCart([...cart, book]);
-  //   Swal.fire({
-  //     position: 'top',
-  //     icon: 'success',
-  //     title: 'Adicionado ao carrinho',
-  //     showConfirmButton: false,
-  //     timer: 1500,
-  //   });
-  //   // window.location.reload();
-  // };
-
-  const handleSubmit = () => {
-    setItems(cart);
+  const addToCart = () => {
+    setCart([...cart, book]);
     Swal.fire({
       position: 'top',
       icon: 'success',
@@ -73,7 +61,19 @@ export default function Card(book: BookProps) {
       showConfirmButton: false,
       timer: 1500,
     });
-  }
+    // window.location.reload();
+  };
+
+//   const handleSubmit = () => {
+//     setItems(cart);
+//     Swal.fire({
+//       position: 'top',
+//       icon: 'success',
+//       title: 'Adicionado ao carrinho',
+//       showConfirmButton: false,
+//       timer: 1500,
+//     });
+//   }
   
   
   useEffect(() => {
@@ -112,7 +112,7 @@ export default function Card(book: BookProps) {
       </div>
 
       <Button text="Detalhes" onClick={goToBookviewPage} />
-      <Button text="Comprar" onClick={handleSubmit} />
+      <Button text="Comprar" onClick={addToCart} />
     </div>
   );
 }

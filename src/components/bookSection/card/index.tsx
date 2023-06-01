@@ -90,8 +90,8 @@ export default function Card(book: BookProps) {
     }
   }, [cart]);
 
-  const cartTest = useStore((state) => state.items)
-  console.log(cartTest);
+//   const cartTest = useStore((state) => state.items)
+//   console.log(cartTest);
 
   return (
     <div className={styles.container}>

@@ -7,22 +7,31 @@ import Swal from 'sweetalert2';
 
 import { animated, useSpring } from 'react-spring';
 
+// Zustand
+import create from 'zustand';
+
 interface BookProps {
   id?: number;
   name: string;
   description: string;
   picture: string;
   price: number;
+  bears?: string[];
 }
+
+interface StoreState {
+  bears: string[];
+  addToBearList: (bear: string) => void;
+}
+
+const useStore = create<StoreState>((set) => ({
+  bears: [],
+  addToBearList: (bear) => set((state) => ({ bears: [...state.bears, bear] })),
+}));
 
 export default function Card(book: BookProps) {
   const navigate = useNavigate();
   const capaTeste = book.picture;
-
-  const goToBookviewPage = () => {
-    navigate(`/book/${book.id}`);
-  };
-
   const [isAnimating, setIsAnimating] = useState(false);
   const [cart, setCart] = useState<BookProps[]>([]);
 
@@ -30,6 +39,10 @@ export default function Card(book: BookProps) {
     transform: isAnimating ? 'scale(1.5)' : 'scale(1)',
     config: { duration: 300 },
   });
+
+  const goToBookviewPage = () => {
+    navigate(`/book/${book.id}`);
+  };
 
   const handleClick = () => {
     setIsAnimating(!isAnimating);
@@ -42,25 +55,27 @@ export default function Card(book: BookProps) {
       icon: 'success',
       title: 'Adicionado ao carrinho',
       showConfirmButton: false,
-      timer: 1500
-    })
-    window.location.reload();
+      timer: 1500,
+    });
+    // window.location.reload();
   };
 
   useEffect(() => {
     const storedCart = localStorage.getItem('cart');
-  
+
     if (storedCart) {
       const parsedCart = JSON.parse(storedCart);
-  
+
       const updatedCart = [...parsedCart, ...cart];
-  
+
       localStorage.setItem('cart', JSON.stringify(updatedCart));
     } else {
       localStorage.setItem('cart', JSON.stringify(cart));
     }
   }, [cart]);
-  
+
+  const bears = useStore((state) => state.bears);
+  const addToBearList = useStore((state) => state.addToBearList);
 
   return (
     <div className={styles.container}>
@@ -82,7 +97,6 @@ export default function Card(book: BookProps) {
 
       <Button text="Detalhes" onClick={goToBookviewPage} />
       <Button text="Comprar" onClick={addToCart} />
-
     </div>
   );
 }

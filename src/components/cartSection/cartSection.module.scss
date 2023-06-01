@@ -17,11 +17,15 @@
 .slideLeft {
     animation: slideLeft 1s linear;
     animation-fill-mode: forwards;
+    position: relative;
+    z-index: 2;
 }
 
 .slideRight {
     animation: slideRight 1s linear;
     animation-fill-mode: forwards;
+    position: relative;
+    z-index: 2;
 }
 
 .headerCart{

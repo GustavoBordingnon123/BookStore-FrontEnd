@@ -11,13 +11,16 @@ import imagem3 from '../components/images/castleBanner.jpg';
 //components
 
 import NavBar from '../components/navbar/desktop';
-import SimpleSlider from '../components/sliderNew'
-import Slider from '../components/sliderBanner/slider'
 import BookSection from '../components/bookSection/highlightsSection/index';
 import TimeLineFiltrada from '../components/bookSection/timeLineFiltrada/index';
 import CartSection from '../components/cartSection/index';
 import Footer from '../components/footer/index';
 
+//Sliders 
+
+import SimpleSlider from '../components/Sliders/sliderNew'
+import Slider from '../components/Sliders/sliderBanner/slider'
+import SlideSwipper from '../components/Sliders/SliderSwipper';
 
 
 
@@ -40,12 +43,11 @@ export default function Home(){
         isCartVisible={isCartVisible} 
         setIsCartVisible={setIsCartVisible}
       />
-{/* 
-      <SimpleSlider /> */}
-      <Slider images={[imagem1, imagem2,imagem3]}/>
 
       {busca === "" ? (
         <div className='normalHomePage'>
+               
+          <SlideSwipper />
 
           <BookSection 
             title='Em destaque:' 

@@ -29,7 +29,7 @@ interface StoreState {
 
 export default function Card(book: BookProps) {
 
-  const {setItems} = useStore();
+//   const {setItems} = useStore();
 
   const navigate = useNavigate();
 

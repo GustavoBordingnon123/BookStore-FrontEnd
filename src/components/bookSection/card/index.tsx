@@ -61,7 +61,7 @@ export default function Card(book: BookProps) {
       showConfirmButton: false,
       timer: 1500,
     });
-    // window.location.reload();
+    window.location.reload();
   };
 
 //   const handleSubmit = () => {

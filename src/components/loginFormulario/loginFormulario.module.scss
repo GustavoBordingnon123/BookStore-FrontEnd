@@ -30,18 +30,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: auto;
+    padding-bottom: 5%;
     width: 60%;
     background-color: var(--Branco);
+}
+
+.loginForm, .registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .head{
     width:35%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.head .tituloContainer, .head .option{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.head .option{
+    margin-top: 10%;
+}
+
+p.on{
+    color: var(--Azul);
+}
+
+.head .option p:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .titulo {
@@ -54,7 +82,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .inputContainer input{
@@ -80,15 +108,24 @@
 .buttonContainer {
     display: flex;
     justify-content: space-between;
-    margin-top: 10%;
+    margin-top: 2%;
     width: 80%;
 }
 
 .buttonContainer button{
-    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
 }
 
+
+
 @media screen and (max-width: 1100px){
+
+    .head{
+        width:50%;
+    }
 
     .blocoEsquerdo {
         display: none;

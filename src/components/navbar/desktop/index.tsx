@@ -12,6 +12,17 @@ import { AiFillHeart } from 'react-icons/ai'
 
 export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: any){
 
+
+    let [categoriasVisibility,setCategoriasVisibility] = React.useState("hidden");
+
+    const showCategorias = () => {
+        setCategoriasVisibility("categoriaContainer");
+    }
+
+    const offCategorias = () => {
+        setCategoriasVisibility("hidden");
+    }
+
     const navigate = useNavigate();
     
     function cartAnimation(){
@@ -31,12 +42,14 @@ export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: 
     const goToPerfil = () => {
         navigate(`/perfil`);
     };
+
+   
     
     return(
         <nav className={styles.navbar}>
             <div className={styles.container}>
             
-                <img src={logoIcon} alt="Logo" onClick={goToHome} />
+                <img src={logoIcon} alt="Logo" onClick={goToHome}/>
 
                 <input 
                     className={styles.input} 
@@ -53,8 +66,26 @@ export default function NavBar({busca,setBusca,isCartVisible,setIsCartVisible}: 
                 <p> | </p>
 
                 <div className={styles.iconContainer}>
-                    <BsBook size={32} />
-                    <label>Categorias</label>
+                    <div 
+                        className={styles.tituloContainer} 
+                        onMouseEnter={showCategorias} 
+                        onMouseLeave={offCategorias}
+                    >
+                        <BsBook size={32} />
+                        <label>Categorias</label>
+                    </div>  
+
+                    <div 
+                        id={categoriasVisibility}
+                        onMouseEnter={showCategorias} 
+                        onMouseLeave={offCategorias}
+                    >
+                        <p>Terror</p>
+                        <p>Ação</p>
+                        <p>Ficcção cientifica</p>
+                        <p>Romance</p>
+                        <p>Manga</p>
+                    </div>
                 </div>
 
                 <p> | </p>

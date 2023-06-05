@@ -6,37 +6,40 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 
 export default function NavbarMobile(){
+
+    let isMenuOn = false;
+    let visibilidade = "menuOff"
+
+    function showMenu(){
+        alert('oi')
+        if(isMenuOn){
+            isMenuOn = false;
+            visibilidade= "menuOff"
+        }else{
+            isMenuOn = true;
+            visibilidade= "menu_show"
+        }
+
+    }
+
     return(
         <>
-            <nav>
-                <div className={styles.container}>
+            <div className={styles.menu}>
+                <div className={styles.btn} onClick={showMenu}>
+                    <div className={styles.bar}></div>
+                    <div className={styles.bar}></div>
+                    <div className={styles.bar}></div>
+                </div>
                 
-                <img src={logoIcon} alt="Logo" />
-
-                <input 
-                    // className={styles.input} 
-                    // placeholder='procure aqui seu livro favorito...' 
-                    // onChange={(e) => setBusca(e.target.value)}
-                    // value={}
-                />
-
-                <div className={styles.containerUser}>
-                    <AiOutlineUser size={32}/>
-                    <label>Configure sua conta</label>
-                </div>
-
-                <p> | </p>
-
-                <div className={styles.cartContainer}>
-                    {/* <div className={styles.carrinhoQtdItens}><p>1</p></div> */}
-                    <AiOutlineShoppingCart 
-                        size={32} 
-                        // onClick={cartAnimation}
-                    />
-                </div>
-
+                <nav id={styles.nav} className={visibilidade}>
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
-            </nav>
         </>
     );
 }

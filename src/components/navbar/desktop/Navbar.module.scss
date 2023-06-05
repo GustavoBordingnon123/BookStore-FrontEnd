@@ -53,13 +53,25 @@
 }
 
 
-.iconContainer{
+.iconContainer, .tituloContainer{
     display: flex;
     align-items: center;
+    flex-direction: column;
     height: auto;    
 }
 
 .iconContainer label {
     margin-left:5px;
+}
+
+#categoriaContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: var(--Azul);
+    width: 15%;
+    text-align: center;
+    z-index: 2;
 }
 

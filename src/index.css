@@ -41,3 +41,33 @@ code {
 .opMedium {
   opacity: 0.8;
 }
+
+.hidden , #hidden{
+  display:none;
+}
+
+p.on{
+  color: var(--Azul);
+}
+
+#categoriaContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5%;
+  background-color: var(--Azul);
+  box-shadow: var(--Branco) 0px 0px 0px 1px inset, var(--Branco) 0px 0px 0px 1px;
+  width: 15%;
+  text-align: center;
+  z-index: 2;
+}
+
+
+#categoriaContainer p {
+  border-bottom: 0.5px solid var(--Branco);
+}
+
+#categoriaContainer p:hover {
+  cursor:pointer;
+}
+

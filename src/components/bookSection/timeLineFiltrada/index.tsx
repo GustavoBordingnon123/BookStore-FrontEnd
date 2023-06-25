@@ -18,18 +18,24 @@ export default function TimeLineFiltrada({ busca }: TimeLineFiltradaProps) {
       <>
         <div className={styles.container}>
           <div className={styles.cardsSection}>
-            {booksFiltrados.map((book) => {
-              return (
-                <div className={styles.cardContainer}>
-                  <Card 
-                    name={book.name} 
-                    description={book.description} 
-                    picture={book.picture} 
-                    price={book.price}
-                  />
-                </div>
-              )
-            })}
+          {booksFiltrados.length > 0 ? (
+            booksFiltrados.map((book) => (
+              <div className={styles.cardContainer}>
+                <Card 
+                  name={book.name} 
+                  description={book.description} 
+                  picture={book.picture} 
+                  price={book.price}
+                />
+              </div>
+            ))
+          ):(
+            <div className={styles.erroContainer}>
+              <div className={styles.textContainer}>
+                <p>Ops, não encontramos esse livro.</p>
+              </div>
+            </div>
+          )}
           </div>
         </div>
       </>

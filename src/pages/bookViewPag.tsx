@@ -2,9 +2,10 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import CartSection from '../components/cartSection';
-import NavBar from '../components/navbar/desktop';
+import NavBar from '../components/navbar/header';
 import BookAbout from "../components/bookAbout";
 import Footer from '../components/footer/index';
+import TimeLineFiltrada from '../components/bookSection/timeLineFiltrada';
 
 
 
@@ -31,7 +32,13 @@ export default function BookViewPage() {
           setIsCartVisible={setIsCartVisible}
         />
 
-        <BookAbout bookId={bookId} />
+        {busca === "" ? (
+            <BookAbout bookId={bookId} />
+        ) : (
+          <div>
+            <TimeLineFiltrada busca={busca} />
+          </div>
+        )}
         <Footer />
       </div>
     </>

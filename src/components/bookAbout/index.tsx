@@ -128,6 +128,7 @@ export default function BookAbout(bookId: BookProps){
                 {Books.slice(0, 3).map((card) => {
                     return (
                         <Card 
+                            id={card.id}
                             name={card.name} 
                             description={card.description} 
                             picture={card.picture} 

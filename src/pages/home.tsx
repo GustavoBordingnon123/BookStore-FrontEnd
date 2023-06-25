@@ -10,7 +10,7 @@ import imagem3 from '../components/images/castleBanner.jpg';
 
 //components
 
-import NavBar from '../components/navbar/desktop';
+import NavBar from '../components/navbar/header';
 import BookSection from '../components/bookSection/highlightsSection/index';
 import TimeLineFiltrada from '../components/bookSection/timeLineFiltrada/index';
 import CartSection from '../components/cartSection/index';
@@ -45,6 +45,7 @@ export default function Home(){
           isCartVisible={isCartVisible} 
           setIsCartVisible={setIsCartVisible}
         />
+
 
         {busca === "" ? (
           <div className='normalHomePage'>

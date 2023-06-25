@@ -2,8 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 // Components
+import NavBar from '../components/navbar/header';
 import CartSection from '../components/cartSection';
-import NavBar from '../components/navbar/desktop';
+import TimeLineFiltrada from '../components/bookSection/timeLineFiltrada';
 import PerfilFormulario from '../components/perfilFormulario';
 import Footer from '../components/footer/index';
 
@@ -28,7 +29,14 @@ export default function BookViewPage() {
           isCartVisible={isCartVisible} 
           setIsCartVisible={setIsCartVisible}
         />
-        <PerfilFormulario />
+
+        {busca === "" ? (
+            <PerfilFormulario />
+        ) : (
+          <div>
+            <TimeLineFiltrada busca={busca} />
+          </div>
+        )}
         <Footer />
       </div>
     </>
